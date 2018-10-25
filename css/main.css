@@ -1,0 +1,258 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: grey;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 25px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border: 0px solid #000000;
+}
+
+
+@media(min-width: 1000px) {
+    #panel1 > h1{
+        font-size: 100px;
+    }
+
+    #panel1 > h3 {
+        font-size: 60px;
+    }
+
+    #panel3 > h1 {
+        font-size: 100px;
+    }
+
+    #panel2-sub1 > h1 {
+        font-size: 75px;
+    }
+
+    #register {
+        text-align: left;
+        align-self: center;
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #register > input {
+        padding: 10px;
+        width: 500px;
+    }
+
+    #panel2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px 10px;
+        grid-template-areas: ". .";
+    }
+}
+
+@media(max-width: 999px) {
+
+    #panel1 > h1 {
+        font-size: 65px;
+    }
+
+    #panel1 > h3 {
+        font-size:30px;
+    }
+
+    #panel3 > h1{
+        font-size: 100px;
+    }    
+
+    #panel2-sub1 > h1 {
+        font-family: 'Volkhov', serif;
+        font-size: 100px;
+    }
+
+    #register {
+        text-align: left;
+        align-self: center;
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #register > input {
+        padding: 10px;
+        width: 500px;
+    }
+}
+
+@media(max-width: 670px) {
+    #panel3 > h1 {
+        font-size: 50px;
+    }
+
+    #panel2-sub1 > h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 600px) {
+    #panel1 {
+        padding: 100px 20px 100px 20px;
+    }
+
+    #panel1 > h1 {
+        font-size: 35px;
+    }
+
+    #panel1 > h3 {
+        font-size: 24px;
+    }
+
+    
+    #register > input {
+        padding: 5px;
+        width: 300px;
+    }
+}
+
+#title-splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#panel1 {
+    background-color: #3D53FF;
+    color: white;
+}
+
+#panel1 > h1 {
+    font-weight: 800;
+}
+
+#panel1 > h3 {
+    font-family: 'Merriweather', serif;
+}
+
+#panel1 > a {
+    background-color: white;
+    color: #3D53FF;
+}
+
+#panel1 > a:hover {
+    background-color:rgb(218, 216, 216);
+}
+
+#panel2 {
+    padding: 200px 50px 200px 50px;
+    background-color: white;
+    color: black;
+}
+
+#panel2-sub1 > h1 {
+    font-family: 'Volkhov', serif;
+}
+
+#panel2-sub2 > h1 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#panel2-sub2 > p {
+    text-align: left;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+#panel3 {
+    background-color: black;
+    color: white;
+}
+
+#panel4 {
+    background: #3D53FF;
+    color: white;
+}
+
+#panel4 > h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+}
+
+#panel4 > h3 {
+    font-size: 36px;
+}
+
+#register > p{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    font-size: 24px;
+}
+
+#register > button {
+    background-color: white;
+    color: #3D53FF;
+    align-self: flex-start;
+    margin: 20px 0 0 0;
+}
+
+.footer {
+    background: #3D53FF;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.line {
+    padding: 25px 0 0 0 ;
+    border-top: 1px solid white;
+}
+
+.footer-brand {
+    align-self: center;
+    height: 85px;
+    width: auto;
+}
+
+.footer > p {
+    font-weight: 600;
+}
